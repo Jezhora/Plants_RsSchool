@@ -195,6 +195,72 @@ header {
   background-color: #E06733;
 }
 
+.arrow {
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  background-color: #D9D9D9;
+}
+.arrow::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 1px;
+  background-color: #717171;
+  -webkit-transform: translateX(1px) rotate(45deg);
+          transform: translateX(1px) rotate(45deg);
+}
+.arrow::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 1px;
+  background-color: #717171;
+  -webkit-transform: translateX(-1px) rotate(-45deg);
+          transform: translateX(-1px) rotate(-45deg);
+}
+.arrow_dark {
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  background-color: #AEA1A1;
+}
+.arrow_dark::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 1px;
+  background-color: #FFFFFF;
+  -webkit-transform: translateX(1px) rotate(45deg);
+          transform: translateX(1px) rotate(45deg);
+}
+.arrow_dark::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 1px;
+  background-color: #FFFFFF;
+  -webkit-transform: translateX(-1px) rotate(-45deg);
+          transform: translateX(-1px) rotate(-45deg);
+}
 .arrow_active {
   width: 16px;
   height: 16px;
@@ -228,8 +294,7 @@ header {
   -webkit-transform: translateX(-1px) rotate(45deg);
           transform: translateX(-1px) rotate(45deg);
 }
-
-.arrow {
+.arrow_active_dark {
   width: 16px;
   height: 16px;
   display: -webkit-box;
@@ -242,25 +307,25 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 100%;
-  background-color: #D9D9D9;
+  background-color: #8BA07E;
 }
-.arrow::before {
+.arrow_active_dark::before {
   content: "";
   display: block;
   width: 4px;
   height: 1px;
-  background-color: #717171;
-  -webkit-transform: translateX(1px) rotate(45deg);
-          transform: translateX(1px) rotate(45deg);
+  background-color: #ffffff;
+  -webkit-transform: translateX(1px) rotate(-45deg);
+          transform: translateX(1px) rotate(-45deg);
 }
-.arrow::after {
+.arrow_active_dark::after {
   content: "";
   display: block;
   width: 4px;
   height: 1px;
-  background-color: #717171;
-  -webkit-transform: translateX(-1px) rotate(-45deg);
-          transform: translateX(-1px) rotate(-45deg);
+  background-color: #ffffff;
+  -webkit-transform: translateX(-1px) rotate(45deg);
+          transform: translateX(-1px) rotate(45deg);
 }
 
 .about {
@@ -594,42 +659,6 @@ header {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
-}
-.contact__city:active {
-  background-color: #C1E698;
-}
-.contact__city_arrow {
-  width: 16px;
-  height: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 100%;
-  background-color: #AEA1A1;
-}
-.contact__city_arrow::before {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 1px;
-  background-color: #FFFFFF;
-  -webkit-transform: translateX(1px) rotate(45deg);
-          transform: translateX(1px) rotate(45deg);
-}
-.contact__city_arrow::after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 1px;
-  background-color: #FFFFFF;
-  -webkit-transform: translateX(-1px) rotate(-45deg);
-          transform: translateX(-1px) rotate(-45deg);
 }
 
 footer {
@@ -1294,6 +1323,8 @@ footer {
   display: none;
 }
 
-.show {
-  display: block;
+.show_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
