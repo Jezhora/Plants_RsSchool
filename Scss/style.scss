@@ -12,6 +12,8 @@ html {
 	max-width: 1242px;
 	margin: 0 auto;
 }
+
+
 @import 'blocks/header';
 @import 'blocks/welcome';
 @import 'blocks/button';
@@ -21,4 +23,12 @@ html {
 @import 'blocks/contact';
 @import 'blocks/footer';
 @import 'media';
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block
+}
 
