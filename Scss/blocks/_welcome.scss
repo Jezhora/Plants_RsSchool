@@ -1,0 +1,39 @@
+.welcome {
+	height: 532px;
+	background-color: $bg_section-color;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__leafs {
+    margin: 53px 0 0 1px;
+  }
+  &__info {
+    max-width: 549px;
+    margin: 98px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__header {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    span {
+    color: $green-color;
+    }
+  }
+  &__descr {
+    margin-top: 44px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: $descr-color;
+  }
+}
+
+

@@ -1,0 +1,92 @@
+.contact {
+  height: 550px;
+  background-color: $bg_section-color;
+  &__wrapper {
+    display: flex;
+  }
+  &__img {
+    margin: 53px 0 0 10px;
+   
+  }
+  &__text {
+    margin: 60px 0 0 113px;
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: $green-color;
+  }
+  &__city {
+    width: 450px;
+    height: 50px;
+    margin: 148px 0 0 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px 0 20px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    &:active {
+      background-color: #C1E698;
+      .contact__city_arrow {
+        width: 16px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      border-radius: 100%;
+      background-color: #8BA07E;
+      &::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 1px;
+        background-color: #FFFFFF;
+        transform: translateX(1px) rotate(-45deg);
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 1px;
+        background-color: #FFFFFF;
+        transform: translateX(-1px) rotate(45deg);
+      }
+      }
+    }
+    &_arrow {
+      width: 16px;
+      height: 16px;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      border-radius: 100%;
+      background-color: #AEA1A1;
+      &::before {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 1px;
+        background-color: #FFFFFF;
+        transform: translateX(1px) rotate(45deg);
+      }
+      &::after {
+        content: '';
+        display: block;
+        width: 4px;
+        height: 1px;
+        background-color: #FFFFFF;
+        transform: translateX(-1px) rotate(-45deg);
+      }
+    }
+  }
+  
+}

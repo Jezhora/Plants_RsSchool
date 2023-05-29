@@ -1,0 +1,38 @@
+.about {
+  height: 666px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    margin: 161px 0 0 10px
+  }
+  &__subheader {
+    width: 463px;
+    height: 102px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: $green-color;
+    span {
+      color: $orange-color;
+    }
+  }
+  &__descr {
+    max-width: 605px;
+    height: 208px;
+    margin-top: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: $descr-color;
+  }
+  &__houseplant {
+    width: 464px;
+    margin: 93px 9px 94px 0;
+  }
+}
