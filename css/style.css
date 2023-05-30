@@ -438,8 +438,13 @@ header {
   text-align: center;
   color: #E06733;
 }
-.service__item img {
-  margin-bottom: 20px;
+.service__desktop {
+  margin-bottom: 11px;
+}
+.service__mobile {
+  width: 280px;
+  height: 530px;
+  display: none;
 }
 
 .prices {
@@ -495,9 +500,8 @@ header {
   margin-top: 33px;
 }
 .prices__items {
-  width: 332px;
-  min-height: 282px;
   margin-top: 58px;
+  padding: 0 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,7 +542,7 @@ header {
 }
 .prices__items_active {
   height: 154px;
-  width: 250px;
+  max-width: 250px;
   margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -883,30 +887,17 @@ footer {
     width: 280px;
     height: 450px;
     margin-top: 38px;
-    padding: 0 9px 18px 8px;
     line-height: 20px;
   }
   .service__item span {
     -webkit-transform: translate(-1px, 9px);
             transform: translate(-1px, 9px);
   }
-  .service__item_1 {
-    background: url("../assets/img/service/mob/service_mob1.png") top no-repeat;
+  .service__desktop {
+    display: none;
   }
-  .service__item_2 {
-    background: url("../assets/img/service/mob/service_mob2.png") top no-repeat;
-  }
-  .service__item_3 {
-    background: url("../assets/img/service/mob/service_mob3.png") top no-repeat;
-  }
-  .service__item_4 {
-    background: url("../assets/img/service/mob/service_mob4.png") top no-repeat;
-  }
-  .service__item_5 {
-    background: url("../assets/img/service/mob/service_mob5.png") center top no-repeat;
-  }
-  .service__item_6 {
-    background: url("../assets/img/service/mob/service_mob6.png") center top no-repeat;
+  .service__mobile {
+    display: block;
   }
   .prices {
     height: 585px;
@@ -1061,7 +1052,7 @@ footer {
     margin: 154px 0 0 20px;
   }
 }
-@media (max-width: 577px) {
+@media (max-width: 590px) {
   .btn__main {
     width: 100px;
     height: 34px;
@@ -1269,13 +1260,13 @@ footer {
   .prices__items {
     width: 224px;
     height: 235px;
-    margin-top: 27px;
-    padding: 21px 0;
+    margin-top: 20px;
+    padding: 29px 0;
   }
   .prices__items_btn {
     width: 180px;
     height: 50px;
-    padding: 17px 39px 0 31px;
+    padding: 14px 25px 0 31px;
     font-size: 15px;
   }
   .prices__leafs__min {
@@ -1284,7 +1275,6 @@ footer {
   .btn__prices {
     width: 121px;
     height: 35px;
-    margin: 20px 0 0 0;
     font-size: 15px;
   }
   .contact {

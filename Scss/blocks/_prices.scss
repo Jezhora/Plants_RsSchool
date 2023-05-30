@@ -34,9 +34,10 @@
 		margin-top: 33px;
 	}
 	&__items {
-		width: 332px;
-		min-height: 282px;
+		// width: 332px;
+		// height: 282px;
 		margin-top: 58px;
+		padding: 0 0 0 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -62,7 +63,7 @@
 		}
 		&_active {
 			height: 154px;
-			width: 250px;
+			max-width: 250px;
 			margin-top: 32px;
 			display: flex;
 			justify-content: space-between;

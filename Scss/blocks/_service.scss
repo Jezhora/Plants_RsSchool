@@ -46,9 +46,14 @@
 		text-align: center;
 		color: $orange-color;
 		}
-		img {
-			margin-bottom: 20px;
-		}
+	}
+	&__desktop {
+		margin-bottom: 11px;
+	}
+	&__mobile {
+		width: 280px;
+		height: 530px;
+		display: none;
 	}
 }
 
