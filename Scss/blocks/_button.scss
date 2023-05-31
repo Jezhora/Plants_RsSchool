@@ -13,6 +13,11 @@
 		&__service {
 			margin: 67px 38px 0 0;
 			background-color: $bg_section-color;
+			&_active {
+				margin: 67px 38px 0 0;
+				background-color: $orange-color;
+				color:#ffff;
+			}
 		}
 		&__prices {
 		margin: 40px 10px 0 0;

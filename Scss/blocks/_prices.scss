@@ -34,10 +34,8 @@
 		margin-top: 33px;
 	}
 	&__items {
-		// width: 332px;
-		// height: 282px;
 		margin-top: 58px;
-		padding: 0 0 0 0;
+		padding: 34px 41px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -61,8 +59,11 @@
 		background: #EDF2EC;
 		cursor: pointer;
 		}
+		:nth-child(1){
+			margin: 0;
+		}
 		&_active {
-			height: 154px;
+			max-height: 154px;
 			max-width: 250px;
 			margin-top: 32px;
 			display: flex;
@@ -127,6 +128,10 @@
 			border-radius: 10px;
 			border: none;
 			color: #717171;
+			&:hover {
+				background: $orange-color;
+				color:#FFFFFF;
+			}
 			} 
 		} 	
 	}

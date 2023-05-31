@@ -159,6 +159,11 @@ header {
   margin: 67px 38px 0 0;
   background-color: #EDF2EC;
 }
+.btn__service_active {
+  margin: 67px 38px 0 0;
+  background-color: #E06733;
+  color: white;
+}
 .btn__prices {
   margin: 40px 10px 0 0;
   background-color: #FFFFFF;
@@ -501,7 +506,7 @@ header {
 }
 .prices__items {
   margin-top: 58px;
-  padding: 0 0 0 0;
+  padding: 34px 41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,8 +545,11 @@ header {
   background: #EDF2EC;
   cursor: pointer;
 }
+.prices__items :nth-child(1) {
+  margin: 0;
+}
 .prices__items_active {
-  height: 154px;
+  max-height: 154px;
   max-width: 250px;
   margin-top: 32px;
   display: -webkit-box;
@@ -616,6 +624,10 @@ header {
   border-radius: 10px;
   border: none;
   color: #717171;
+}
+.prices__items_active_order:hover {
+  background: #E06733;
+  color: #FFFFFF;
 }
 
 .contact {
@@ -801,6 +813,9 @@ footer {
   .btn__service {
     margin-top: 40px;
   }
+  .btn__service_active {
+    margin-top: 40px;
+  }
   .contact__text {
     margin: 60px 0 0 0px;
     font-size: 40px;
@@ -868,8 +883,11 @@ footer {
   .btn__service {
     margin: 44px 38px 0 0;
   }
+  .btn__service_active {
+    margin: 44px 38px 0 0;
+  }
   .service {
-    height: 1780px;
+    min-height: 1780px;
   }
   .service__projects {
     margin: 0;
@@ -996,7 +1014,10 @@ footer {
     margin: 0;
   }
   .btn__service {
-    margin: 10px 10px;
+    margin: 10px;
+  }
+  .btn__service_active {
+    margin: 10px;
   }
   .service {
     height: 1700px;
@@ -1053,18 +1074,6 @@ footer {
   }
 }
 @media (max-width: 590px) {
-  .btn__main {
-    width: 100px;
-    height: 34px;
-    margin-top: 25px;
-    font-size: 10px;
-  }
-  .btn__service {
-    width: 121px;
-    height: 35px;
-    margin: 10px 10px 0 0;
-    font-size: 15px;
-  }
   header {
     height: 96px;
     padding: 26px 0 0 0;
@@ -1230,23 +1239,8 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .service__item_2 {
-    margin-top: 35px;
-  }
-  .service__item_3 {
-    margin-top: 35px;
-  }
-  .service__item_4 {
-    margin-top: 33px;
-  }
-  .service__item_5 {
-    margin-top: 33px;
-  }
-  .service__item_6 {
-    margin-top: 35px;
-  }
   .prices {
-    height: 512px;
+    min-height: 512px;
     padding: 15px;
   }
   .prices__subheader {
@@ -1259,13 +1253,20 @@ footer {
   }
   .prices__items {
     width: 224px;
-    height: 235px;
+    min-height: 235px;
     margin-top: 20px;
     padding: 29px 0;
   }
   .prices__items_btn {
+    max-width: 180px;
+    min-height: 50px;
+    margin-top: 13px;
+    padding: 14px 25px 0 31px;
+    font-size: 15px;
+  }
+  .prices__items_active {
     width: 180px;
-    height: 50px;
+    min-height: 185px;
     padding: 14px 25px 0 31px;
     font-size: 15px;
   }
@@ -1275,6 +1276,24 @@ footer {
   .btn__prices {
     width: 121px;
     height: 35px;
+    font-size: 15px;
+  }
+  .btn__main {
+    width: 100px;
+    height: 34px;
+    margin-top: 25px;
+    font-size: 10px;
+  }
+  .btn__service {
+    width: 121px;
+    height: 35px;
+    margin: 10px 10px 0 0;
+    font-size: 15px;
+  }
+  .btn__service_active {
+    width: 121px;
+    height: 35px;
+    margin: 10px 10px 0 0;
     font-size: 15px;
   }
   .contact {
