@@ -452,6 +452,11 @@ header {
   display: none;
 }
 
+.blur {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+
 .prices {
   height: 560px;
   padding-top: 40px;
