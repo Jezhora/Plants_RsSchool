@@ -38,11 +38,6 @@
 		&__subheader {
 		margin: 60px 0 0 0;
     }
-    &__items {
-		&:hover > :not(:hover) {
-			filter: none;
-		}
-    }
     &__subheader {
       	width: 760px;
     }
