@@ -510,6 +510,7 @@ header {
   margin-top: 33px;
 }
 .prices__items {
+  min-height: 281px;
   margin-top: 58px;
   padding: 34px 41px;
   display: -webkit-box;
@@ -519,19 +520,15 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
 }
 .prices__items_btn {
   width: 250px;
   height: 50px;
-  margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,7 +537,7 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 16px 40px 16px 40px;
+  padding: 16px 40px;
   font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
@@ -550,13 +547,9 @@ header {
   background: #EDF2EC;
   cursor: pointer;
 }
-.prices__items :nth-child(1) {
-  margin: 0;
-}
 .prices__items_active {
   max-height: 154px;
   max-width: 250px;
-  margin-top: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -565,13 +558,12 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 16px 40px 16px 40px;
+  padding: 16px 40px;
   font-family: "Inter";
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
-  margin-top: 32px;
   border-radius: 20px;
   background: #D6E7D2;
 }

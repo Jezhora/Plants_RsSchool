@@ -34,22 +34,21 @@
 		margin-top: 33px;
 	}
 	&__items {
+		min-height: 281px;
 		margin-top: 58px;
 		padding: 34px 41px;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
+		justify-content: space-between;
 		border: 1px solid #E3E1D5;
 		border-radius: 20px;
 		&_btn {
 		width: 250px;
 		height: 50px;
-		margin-top: 32px;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding: 16px 40px 16px 40px;
+		padding: 16px 40px;
 		font-family: 'Inter';
 		font-weight: 700;
 		font-size: 20px;
@@ -59,23 +58,18 @@
 		background: #EDF2EC;
 		cursor: pointer;
 		}
-		:nth-child(1){
-			margin: 0;
-		}
 		&_active {
 			max-height: 154px;
 			max-width: 250px;
-			margin-top: 32px;
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			padding: 16px 40px 16px 40px;
+			padding: 16px 40px;
 			font-family: 'Inter';
 			font-weight: 700;
 			font-size: 20px;
 			line-height: 20px;
 			color: #000000;
-			margin-top: 32px;
 			border-radius: 20px;
 			background: #D6E7D2;
 			&_name {        
