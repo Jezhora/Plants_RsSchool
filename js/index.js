@@ -37,28 +37,28 @@ window.addEventListener('DOMContentLoaded', () => {
 	serviceBtnsParents.addEventListener('click', (event) => {
 		const target = event.target;
 
-				if(target.classList.contains('btn__service') && count < 2) {
-					target.classList.add('btn__service_active')
-					target.classList.remove('btn__service')
-					serviceItems.forEach(item => {
-						item.classList.add('blur')
-					})
-					removeBlur()
-					count ++;
-				} else if (target.classList.contains('btn__service_active')) {
-					target.classList.add('btn__service')
-					target.classList.remove('btn__service_active')
-					serviceItems.forEach(item => {
-						item.classList.add('blur')
-					})
-					removeBlur()
-					count --;
-				}
-				if (count === 0) {
-					serviceItems.forEach(item => {
-						item.classList.remove('blur')
-					})
-				}
+		if(target.classList.contains('btn__service') && count < 2) {
+			target.classList.add('btn__service_active')
+			target.classList.remove('btn__service')
+			serviceItems.forEach(item => {
+				item.classList.add('blur')
+			})
+			removeBlur()
+			count ++;
+		} else if (target.classList.contains('btn__service_active')) {
+			target.classList.add('btn__service')
+			target.classList.remove('btn__service_active')
+			serviceItems.forEach(item => {
+				item.classList.add('blur')
+			})
+			removeBlur()
+			count --;
+		}
+		if (count === 0) {
+			serviceItems.forEach(item => {
+				item.classList.remove('blur')
+			})
+		}
 			
 		function removeBlur() {	
 

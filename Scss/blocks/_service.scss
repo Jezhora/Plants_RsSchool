@@ -19,7 +19,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		padding: 0 10px;
+		padding: 0 10px 0 0;
 	}
 	&__item {
 		width: 330px;
@@ -48,7 +48,7 @@
 		}
 	}
 	&__desktop {
-		margin-bottom: 11px;
+		margin-bottom: 13px;
 	}
 	&__mobile {
 		width: 280px;

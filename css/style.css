@@ -407,7 +407,7 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
 }
 .service__item {
   width: 330px;
@@ -444,7 +444,7 @@ header {
   color: #E06733;
 }
 .service__desktop {
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 .service__mobile {
   width: 280px;
