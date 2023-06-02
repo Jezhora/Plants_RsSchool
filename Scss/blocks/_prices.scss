@@ -36,10 +36,10 @@
 	&__items {
 		min-height: 281px;
 		margin-top: 58px;
-		padding: 34px 41px;
+		padding: 2px 41px 34px 41px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		border: 1px solid #E3E1D5;
 		border-radius: 20px;
 		&_btn {
@@ -48,6 +48,7 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		margin-top: 32px;
 		padding: 16px 40px;
 		font-family: 'Inter';
 		font-weight: 700;
@@ -56,7 +57,7 @@
 		color: #000000;
 		border-radius: 20px;
 		background: #EDF2EC;
-		cursor: pointer;
+		cursor: pointer;	
 		}
 		&_active {
 			max-height: 154px;
@@ -65,6 +66,7 @@
 			justify-content: space-between;
 			flex-wrap: wrap;
 			padding: 16px 40px;
+			margin-top: 32px;
 			font-family: 'Inter';
 			font-weight: 700;
 			font-size: 20px;
