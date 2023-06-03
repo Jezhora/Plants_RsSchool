@@ -615,17 +615,22 @@ header {
   width: 86px;
   height: 25px;
   margin-top: 12px;
+  border-radius: 10px;
+  border: none;
+  padding-bottom: 3px;
+}
+.prices__items_active_order a {
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  background: #FFFFFF;
-  border-radius: 10px;
-  border: none;
+  text-decoration: none;
   color: #717171;
 }
 .prices__items_active_order:hover {
   background: #E06733;
+}
+.prices__items_active_order:hover a {
   color: #FFFFFF;
 }
 
@@ -650,7 +655,16 @@ header {
   text-align: center;
   color: #499A18;
 }
-.contact__city {
+.contact__city__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contact__city_name {
   width: 450px;
   height: 50px;
   margin: 148px 0 0 68px;
@@ -674,6 +688,33 @@ header {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+.contact__city_menu {
+  width: 450px;
+  height: 234px;
+  margin-left: 68px;
+  background-color: #DCE9D9;
+}
+.contact__city_menu ul {
+  padding: 27px 41px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #499A18;
+  list-style-type: none;
+}
+.contact__city_menu ul li:hover {
+  cursor: pointer;
+  color: #717171;
+}
+.contact__city_menu ul li:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #717171;
 }
 
 footer {
@@ -1331,8 +1372,8 @@ footer {
 .fade {
   -webkit-animation-name: fade;
           animation-name: fade;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {

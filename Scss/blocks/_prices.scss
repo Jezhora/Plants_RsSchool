@@ -116,17 +116,22 @@
 			width: 86px;
 			height: 25px;
 			margin-top: 12px;
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 700;
-			font-size: 14px;
-			background: #FFFFFF;
 			border-radius: 10px;
 			border: none;
-			color: #717171;
+			padding-bottom: 3px;
+			a {
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 14px;
+				text-decoration: none;
+				color: #717171;
+			}
 			&:hover {
 				background: $orange-color;
-				color:#FFFFFF;
+				a {
+					color:#FFFFFF;
+				}
 			}
 			} 
 		} 	
