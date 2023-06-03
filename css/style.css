@@ -199,6 +199,31 @@ header {
 .btn__main:visited {
   background-color: #E06733;
 }
+.btn__adress {
+  width: 122px;
+  height: 26px;
+  margin-top: 24px;
+  font-family: "Inika";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  color: #717171;
+  background-color: #EDF2EC;
+  border: 2px solid #E06733;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn__adress:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: white;
+  background-color: #E06733;
+}
+.btn__adress:visited {
+  background-color: #E06733;
+}
 
 .arrow {
   width: 16px;
@@ -639,6 +664,7 @@ header {
   background-color: #EDF2EC;
 }
 .contact__wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,7 +681,7 @@ header {
   text-align: center;
   color: #499A18;
 }
-.contact__city__wrapper {
+.contact__city_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -690,6 +716,9 @@ header {
   cursor: pointer;
 }
 .contact__city_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 450px;
   height: 234px;
   margin-left: 68px;
@@ -715,6 +744,41 @@ header {
   width: 100%;
   height: 1px;
   background-color: #717171;
+}
+.contact__city_board {
+  width: 448px;
+  height: 214px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 47px 0 0 68px;
+  padding: 17px 35px;
+  background: #EDF2EC;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+.contact__city_board_name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+.contact__city_board_name ul {
+  list-style-type: none;
+}
+.contact__city_board_adress {
+  margin-left: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #717171;
+}
+.contact__city_board_adress ul {
+  list-style-type: none;
 }
 
 footer {
