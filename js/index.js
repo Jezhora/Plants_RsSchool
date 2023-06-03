@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				if(item === 'btn__service_active'){		
 					serviceItems.forEach(item =>{
 						if(item.classList.contains('gardens'))	
-							item.classList.remove('blur');	
+							item.classList.remove('blur');
 					});
 				}
 			});
@@ -98,15 +98,31 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	priceMenu.addEventListener('click', (event) => {
 		const target = event.target;
-		
-		if (target.classList.contains('prices__items_btn', 'hide')) {
+	
+
+		if (target.classList.contains('prices__items_btn')) {
 			pricesBtns.forEach((item, i) => {
 				if(item === target && pricesCount < 1) {
 					showMenu(i);
 					pricesCount ++;
-					console.log(item);
-				}		
+				} else if (item === target && pricesCount === 1){
+					
+					pricesBtnsActive.forEach((item) => {
+						pricesCount --;
+						if(item !== target){
+							item.classList.add('hide', 'fade');
+						}
+					});
+					pricesBtns.forEach((item) => {
+						
+						item.classList.remove('hide');
+						showMenu(i);
+						pricesCount ++;					
+					});
+					
+				}
 			});
+			
 
 		} else if (target.classList.contains('prices__items_active')) {
 			pricesBtnsActive.forEach((item, i) => {
@@ -120,14 +136,15 @@ window.addEventListener('DOMContentLoaded', () => {
 		function showMenu(i) {
 			target.classList.add('hide');		
 			pricesBtnsActive[i].classList.remove('hide');
+			pricesBtnsActive[i].classList.add('fade');
 		}
 
 		function hideMenu(i){
 			target.classList.add('hide');		
 			pricesBtns[i].classList.remove('hide');
+			pricesBtns[i].classList.add('fade');
 		}
 	});
-	
 
 });
 

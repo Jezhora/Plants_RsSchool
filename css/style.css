@@ -520,9 +520,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #E3E1D5;
   border-radius: 20px;
 }
@@ -1250,7 +1250,7 @@ footer {
     width: 224px;
     min-height: 235px;
     margin-top: 20px;
-    padding: 29px 0;
+    padding: 16px 0 29px 0;
   }
   .prices__items_btn {
     max-width: 180px;
@@ -1262,6 +1262,7 @@ footer {
   .prices__items_active {
     width: 180px;
     min-height: 185px;
+    margin-top: 13px;
     padding: 14px 25px 0 31px;
     font-size: 15px;
   }
@@ -1327,8 +1328,27 @@ footer {
   display: none;
 }
 
-.show_price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

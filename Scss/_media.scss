@@ -447,17 +447,17 @@
 		padding: 15px;
 		&__subheader {
 		font-size: 25px;
-		&_descr {
-			font-size: 20px;
-			line-height: 35px;
-			margin-top: 20px;
-		}
+			&_descr {
+				font-size: 20px;
+				line-height: 35px;
+				margin-top: 20px;
+			}
 		}
 		&__items {
 			width: 224px;
 			min-height: 235px;
 			margin-top: 20px;
-			padding: 29px 0;
+			padding: 16px 0 29px 0;
 			&_btn {
 				max-width: 180px;
 				min-height: 50px;
@@ -468,6 +468,7 @@
 			&_active {
 				width: 180px;
 				min-height: 185px;
+				margin-top: 13px;
 				padding: 14px 25px 0 31px;
 				font-size: 15px;
 			}
