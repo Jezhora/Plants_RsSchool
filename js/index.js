@@ -91,42 +91,42 @@ window.addEventListener('DOMContentLoaded', () => {
 	
 	// prices menu
 	const priceMenu = document.querySelector('.prices__items'),
-			pricesBtnsActive = document.querySelectorAll('.prices__items_active'),
-			pricesBtns = document.querySelectorAll('.prices__items_btn');
+		pricesBtnsActive = document.querySelectorAll('.prices__items_active'),
+		pricesBtns = document.querySelectorAll('.prices__items_btn');
+
+	let pricesCount = 0;	
+
 	priceMenu.addEventListener('click', (event) => {
 		const target = event.target;
 		
-		if (target.classList.contains('prices__items_btn')) {
+		if (target.classList.contains('prices__items_btn', 'hide')) {
 			pricesBtns.forEach((item, i) => {
-				if(item === target && count < 1) {
+				if(item === target && pricesCount < 1) {
 					showMenu(i);
-					count++;
-					console.log(i)
-				}
-				
-			})
-			// target.classList.add('hide');		
-			// pricesBtnsActive[0].classList.remove('hide')
+					pricesCount ++;
+					console.log(item);
+				}		
+			});
+
 		} else if (target.classList.contains('prices__items_active')) {
 			pricesBtnsActive.forEach((item, i) => {
 				if(item === target) {
 					hideMenu(i);
-					count--;
+					pricesCount --;
 				}
-			})
-			// target.classList.add('hide');		
-			// pricesBtns[0].classList.remove('hide')
+			});
 		}
+
 		function showMenu(i) {
 			target.classList.add('hide');		
 			pricesBtnsActive[i].classList.remove('hide');
-		};
+		}
 
 		function hideMenu(i){
 			target.classList.add('hide');		
 			pricesBtns[i].classList.remove('hide');
-		};
-	})
+		}
+	});
 	
 
 });
