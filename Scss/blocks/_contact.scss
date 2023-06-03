@@ -2,14 +2,15 @@
 	height: 550px;
 	background-color: $bg_section-color;
 	&__wrapper {
-		width: 100%;
 		display: flex;
+		justify-content: space-between;
 	}
 	&__img {
 		margin: 53px 0 0 10px;
 	}
 	&__text {
-		margin: 60px 0 0 113px;
+		width: 370px;
+		margin: 60px 0 0 0;
 		font-family: 'Inika';
 		font-weight: 700;
 		font-size: 40px;
@@ -19,13 +20,14 @@
 	}
 	&__city {
 		&_wrapper {
+			width: 450px;
 			display: flex;
 			flex-direction: column;
 		}
 		&_name {
-			width: 450px;
+			width: 100%;
 			height: 50px;
-			margin: 148px 0 0 68px;
+			margin-top: 148px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -42,9 +44,9 @@
 		}
 		&_menu {
 			display: flex;
-			width: 450px;
+			width: 100%;
 			height: 234px;
-			margin-left: 68px;
+			// margin-left: 68px;
 			background-color: #DCE9D9;
 			ul{
 				padding: 27px 41px;
@@ -71,10 +73,10 @@
 			}
 		}
 		&_board {
-			width: 448px;
+			width: 100%;
 			height: 214px;
 			display: flex;
-			margin: 47px 0 0 68px;
+			margin-top: 47px;
 			padding: 17px 35px;
 			background: #EDF2EC;
 			border: 1px solid #000000;
