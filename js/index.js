@@ -146,6 +146,46 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
+	// contact menu
+
+	const cityName = document.querySelector('.contact__city_name'),
+		arrowDark = document.querySelector('.arrow_dark'),
+		contactMenu = document.querySelector('.contact__city_menu'),
+		cityMenu = document.querySelector('[data-city]');
+	
+	cityName.addEventListener('click', () => {
+		
+
+		if(cityName.classList.contains('contact__city_name') || cityName.classList.contains('contact__city_name_active')){
+
+			cityName.classList.remove('contact__city_name');
+			cityName.classList.add('contact__city_name_active',);
+			arrowDark.classList.remove('arrow_dark');
+			arrowDark.classList.add('arrow_dark_active');
+			contactMenu.classList.remove('hide');
+			contactMenu.classList.add('fade');
+			
+			cityMenu.addEventListener('click', (event) => {
+				const target = event.target;
+				let div = document.createElement('div');
+				div.classList.add('arrow_dark_active');
+				
+				cityName.textContent = target.textContent;
+				contactMenu.classList.add('hide');
+				cityName.append(div);
+			
+			});
+
+
+		} else if (cityName.classList.contains('contact__city_name_active'  && cityName.textContent === 'City')) {
+			cityName.classList.remove('contact__city_name_active');
+			cityName.classList.add('contact__city_name', 'fade');
+			arrowDark.classList.remove('arrow_dark_active');
+			arrowDark.classList.add('arrow_dark');
+			contactMenu.classList.add('hide');
+		}
+	});
+
 });
 
 
