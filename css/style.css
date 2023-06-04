@@ -919,6 +919,11 @@ footer {
   .btn__service_active {
     margin-top: 40px;
   }
+  .contact__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .contact__img {
     width: 330px;
     height: 410px;
@@ -930,9 +935,6 @@ footer {
     font-size: 40px;
     line-height: 52px;
     text-align: center;
-  }
-  .contact_city_wrapper {
-    width: 350px;
   }
 }
 @media (max-width: 900px) {
@@ -1057,6 +1059,7 @@ footer {
   .contact {
     height: 739px;
     padding-top: 40px;
+    position: relative;
   }
   .contact__wrapper {
     -webkit-box-orient: vertical;
@@ -1072,15 +1075,15 @@ footer {
     padding: 0;
   }
   .contact__city_name {
+    width: 450px;
     margin-top: 68px;
   }
   .contact__img {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    position: absolute;
     width: 200px;
     height: 248px;
-    margin: 20px 0 0 20px;
+    bottom: 0;
+    margin: 0;
   }
   footer {
     height: 200px;
@@ -1173,6 +1176,17 @@ footer {
   .prices__leafs__min {
     width: 20%;
     height: 20%;
+  }
+  .contact {
+    position: relative;
+    height: 739px;
+  }
+  .contact__img {
+    position: absolute;
+    bottom: 0;
+  }
+  .contact__city_name {
+    width: 450px;
   }
 }
 @media (max-width: 590px) {
@@ -1414,7 +1428,10 @@ footer {
   }
   .contact__city_name {
     width: 300px;
-    margin-top: 80px;
+    margin-top: 50px;
+  }
+  .contact__city_menu {
+    width: 300px;
   }
   .contact__city_board {
     width: 282px;
