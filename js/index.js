@@ -152,10 +152,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		arrowDark = document.querySelector('.arrow_dark'),
 		contactMenu = document.querySelector('.contact__city_menu'),
 		cityMenu = document.querySelector('[data-city]'),
-		cityBoard = document.querySelector('.contact__city_board_adress');
+		cityBoard = document.querySelector('.contact__city_board_adress'),
+		city = document.querySelectorAll('.city');
 	
-
-		console.log(cityBoard.children)
 			
 		
 		
@@ -163,7 +162,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		
 		if(cityName.classList.contains('contact__city_name') || cityName.classList.contains('contact__city_name_active')){
 
-				showCity();
+			showCity();
 			
 			cityMenu.addEventListener('click', (event) => {
 				const target = event.target;
@@ -183,6 +182,10 @@ window.addEventListener('DOMContentLoaded', () => {
 			arrowDark.classList.toggle('arrow_dark_active');
 			contactMenu.classList.toggle('hide');
 			contactMenu.classList.add('fade');
+		}
+
+		function showCityAdress (){
+			
 		}
 	});
 
