@@ -185,18 +185,18 @@ window.addEventListener('DOMContentLoaded', () => {
 			arrowDark.classList.toggle('arrow_dark_active');
 			contactMenu.classList.toggle('hide');
 			contactMenu.classList.add('fade');
-			cityBoard.classList.add('hide')
+			cityBoard.classList.add('hide');
 			cityBoardAdress.forEach(city =>{
-				city.classList.add('hide')
-			})
+				city.classList.add('hide');
+			});
 		
 		}
 
 		function showAdress () {
 			cityBoardAdress.forEach( (city) => {
-				if (cityName.textContent.slice(0, 3) === city.children[0].textContent.slice(0, 3)) {
-					city.classList.remove('hide')
-					cityBoard.classList.remove('hide')
+				if (cityName.textContent === city.children[0].textContent) {
+					city.classList.remove('hide');
+					cityBoard.classList.remove('hide');
 				}
 			
 			});
