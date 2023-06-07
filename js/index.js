@@ -154,16 +154,13 @@ window.addEventListener('DOMContentLoaded', () => {
 		cityMenu = document.querySelector('[data-city]'),
 		cityBoardAdress = document.querySelectorAll('.contact__city_board_adress'),
 		cityBoard = document.querySelector('.contact__city_board');
-
-		
-
 		
 	cityName.addEventListener('click', () => {
 		
 		if(cityName.classList.contains('contact__city_name') || cityName.classList.contains('contact__city_name_active')){
 
-				showCity();
-				
+			showCity();
+	
 		}
 
 		cityMenu.addEventListener('click', (event) => {
@@ -204,6 +201,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			
 			});
 		}
+
 	});
 
 });
