@@ -152,37 +152,57 @@ window.addEventListener('DOMContentLoaded', () => {
 		arrowDark = document.querySelector('.arrow_dark'),
 		contactMenu = document.querySelector('.contact__city_menu'),
 		cityMenu = document.querySelector('[data-city]'),
-		cityBoard = document.querySelector('.contact__city_board_adress');
-	
+		cityBoardAdress = document.querySelectorAll('.contact__city_board_adress'),
+		cityBoard = document.querySelector('.contact__city_board');
 
-		console.log(cityBoard.children)
-			
 		
+
 		
 	cityName.addEventListener('click', () => {
 		
 		if(cityName.classList.contains('contact__city_name') || cityName.classList.contains('contact__city_name_active')){
 
 				showCity();
-			
-			cityMenu.addEventListener('click', (event) => {
-				const target = event.target;
-				let div = document.createElement('div');
-				div.classList.add('arrow_dark_active');
 				
-				cityName.textContent = target.textContent;
-				contactMenu.classList.add('hide');
-				cityName.append(div);
+		}
 
+		cityMenu.addEventListener('click', (event) => {
+			const target = event.target;
+			let div = document.createElement('div');
 
-			});
-		} 
+			div.classList.add('arrow_dark_active');
+			
+			cityName.textContent = target.textContent;
+
+			contactMenu.classList.add('hide');
+			cityName.append(div);
+			
+			showAdress();
+		
+		});
+
+		
 
 		function showCity () {
 			cityName.classList.add('contact__city_name_active');
 			arrowDark.classList.toggle('arrow_dark_active');
 			contactMenu.classList.toggle('hide');
 			contactMenu.classList.add('fade');
+			cityBoard.classList.add('hide')
+			cityBoardAdress.forEach(city =>{
+				city.classList.add('hide')
+			})
+		
+		}
+
+		function showAdress () {
+			cityBoardAdress.forEach( (city) => {
+				if (cityName.textContent.slice(0, 3) === city.children[0].textContent.slice(0, 3)) {
+					city.classList.remove('hide')
+					cityBoard.classList.remove('hide')
+				}
+			
+			});
 		}
 	});
 
