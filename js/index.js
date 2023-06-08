@@ -199,7 +199,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				if (cityName.textContent === city.children[0].textContent) {
 					city.classList.remove('hide');
 					cityBoard.classList.remove('hide');
-				} else if(cityName.offsetWidth < 450) {
+				} else if(document.body.offsetWidth < 591) {
 					contactImg.classList.add('hide');
 				}
 			
