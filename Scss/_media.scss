@@ -1,587 +1,595 @@
 @media (max-width: 1100px) {
-	.container {
-		max-width: 1100px;
-	}
-	.welcome {
-		&__leafs {
-			width: 331px;
-			height: 300px;
-		}
-	}
-	.about {
+  .container {
+    max-width: 1100px;
+  }
+  .welcome {
+    &__leafs {
+      width: 331px;
+      height: 300px;
+    }
+  }
+  .about {
     height: 783px;
     &__wrapper {
-      	flex-direction: column;
-      	justify-content: center;
-      	align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     &__info {
-      	margin: 40px 0 0 0;
-      	text-align: left;
+        margin: 40px 0 0 0;
+        text-align: left;
     }
     &__subheader {
-      	width: 423px;
-      	margin: 0 auto;
-      	text-align: center;
+        width: 423px;
+        margin: 0 auto;
+        text-align: center;
     }
     &__houseplant {
-      	width: 350px;
-      	margin: 40px 0 0 0;
+        width: 350px;
+        margin: 40px 0 0 0;
     }
-  	}
-	.service {
-		height: 1900px;
-		&__projects {
-			flex-wrap: wrap;
-			margin: 60px 0 0 20px;
-			}
-			&__subheader {
-			margin: 60px 0 0 0;
-		}
-		&__subheader {
-			width: 760px;
-		}
-	}
-	.btn__service {
-		margin-top: 40px;
-		&_active{
-			margin-top: 40px;
-		}
-	}
-	.contact {
-		&__wrapper{
-			justify-content: space-between;
-		}
-		&__img {
-			width: 330px;
-			height: 410px;
-			margin: 140px 0 0 0;
-		}
-		&__text {
-			width: 210px ;
-			margin: 60px 0 0 0px;
-			font-size: 40px;
-			line-height: 52px;
-			text-align: center;
-		}
-  	}
+    }
+  .service {
+    height: 1900px;
+    &__projects {
+      flex-wrap: wrap;
+      margin: 60px 0 0 20px;
+      }
+      &__subheader {
+      margin: 60px 0 0 0;
+    }
+    &__subheader {
+      width: 760px;
+    }
+  }
+  .btn__service {
+    margin-top: 40px;
+    &:hover {
+      transition: none;
+      color: $orange-color;
+      background-color: $bg_section-color;
+    }
+    &_active{
+      margin-top: 40px;
+    }
+  }
+  .contact {
+    &__wrapper{
+      justify-content: space-between;
+    }
+    &__img {
+      width: 330px;
+      height: 410px;
+      margin: 140px 0 0 0;
+    }
+    &__text {
+      width: 210px ;
+      margin: 60px 0 0 0px;
+      font-size: 40px;
+      line-height: 52px;
+      text-align: center;
+    }
+    }
 }
 @media (max-width: 900px) {
-	.container {
-		max-width: 668px;
-	}
-	header {
-		height: 117px;
-		padding: 35px 0 0 0;
-	}
-	.header{
-		&__nav{
-			padding: 0;
-		}
-	}
-	.welcome {
-		height: 420px;
-		&__wrapper {
-			flex-direction: row-reverse;
-		}
-		&__leafs {
-			width: 280px;
-			height: 254px;
-			margin: 40px 0 0 0;
-		}
-		&__info {
-			width: 346px;
-			margin: 0;
-		}
-		&__header {
-			margin-top: 40px;
-			font-size: 35px;
-		}
-		&__descr {
-			margin: 31px 0 0 5px;
-			font-size: 16px;
-			line-height: 25px;
-		}
-	}
-	.btn__main {
-		margin-top: 35px;
-	}
-	.about {
-		&__subheader {
-			text-align: center;
-			font-size: 35px;
-			line-height: 46px;
-			}
-			&__descr {
-			max-width: 668px;
-			margin: 40px 0 0 0;
-			font-size: 20px;
-			line-height: 30px;
-			text-align: left;
-			}
-			&__houseplant {
-			width: 250px;
-			height: 258px;
-		}
-	}
-	.btn {
-		&__service {
-			margin: 44px 38px 0 0;
-			&_active {
-				margin: 44px 38px 0 0
-			}
-		}
+  .container {
+    max-width: 668px;
+  }
+  header {
+    height: 117px;
+    padding: 35px 0 0 0;
+  }
+  .header{
+    &__nav{
+      padding: 0;
+    }
+  }
+  .welcome {
+    height: 420px;
+    &__wrapper {
+      flex-direction: row-reverse;
+    }
+    &__leafs {
+      width: 280px;
+      height: 254px;
+      margin: 40px 0 0 0;
+    }
+    &__info {
+      width: 346px;
+      margin: 0;
+    }
+    &__header {
+      margin-top: 40px;
+      font-size: 35px;
+    }
+    &__descr {
+      margin: 31px 0 0 5px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  .btn__main {
+    margin-top: 35px;
+  }
+  .about {
+    &__subheader {
+      text-align: center;
+      font-size: 35px;
+      line-height: 46px;
+      }
+      &__descr {
+      max-width: 668px;
+      margin: 40px 0 0 0;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+      }
+      &__houseplant {
+      width: 250px;
+      height: 258px;
+    }
+  }
+  .btn {
+    &__service {
+      margin: 44px 38px 0 0;
+      &_active {
+        margin: 44px 38px 0 0
+      }
+    }
     
-  	}
-	.service {
-		min-height: 1780px;
-		&__projects{
-			margin: 0;
-		}
-		&__subheader{
-			margin: 58px 0 0 0;
-			font-size: 35px;
-			line-height: 46px;
-		}
-		&__items {
-			margin: 0;
-			padding: 0;
-		}
-		&__item {
-			width: 280px;
-			height: 450px;
-			margin-top: 38px;
-			line-height: 20px;
-			span {
-				transform: translate(-1px, 9px);
-			}
-		}
-		&__desktop {
-			display: none;
-		}
-		&__mobile {
-			display: block;
-		}
-	}
+    }
+  .service {
+    min-height: 1780px;
+    &__projects{
+      margin: 0;
+    }
+    &__subheader{
+      margin: 58px 0 0 0;
+      font-size: 35px;
+      line-height: 46px;
+    }
+    &__items {
+      margin: 0;
+      padding: 0;
+    }
+    &__item {
+      width: 280px;
+      height: 450px;
+      margin-top: 38px;
+      line-height: 20px;
+      span {
+        transform: translate(-1px, 9px);
+      }
+    }
+    &__desktop {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+    }
+  }
   
-	.prices {
-		height: 585px;
-		padding-top: 37px;
-		&__choise{
-			margin: 0;
-		}
-		&__subheader {
-			font-size: 35px;
-			margin-left: 15px;
-		&_descr {
-			margin: 103px 0 0 0;
-			font-size: 25px;
-			line-height: 35px;
-		}
-		}
-		&__items {
-			margin-top: 53px;
-		}
-		&__leafs__min {
-			margin: 30px -10px 0 0 ;
-		}
-	}
-	.btn__prices {
-		margin-top: 28px;
-	}
-	.contact {
-		height: 739px;
-		padding-top: 40px;
-		position: relative;
-		&__wrapper {
-			flex-direction: column;
-			align-items:center;
-		}
-		&__text {
-			margin: 0;
-			padding: 0;
-		}
-		&__city {
-			&_name {
-				width: 450px;
-				margin-top: 68px;
-			}
-		}
-		&__img {
-			position: absolute;
-			width: 200px;
-			height: 248px;
-			bottom: 0;
-			margin: 0;
-		}
-	}
-	footer {
-		height: 200px;
-	}
-	.footer {
-		&__wrapper {
-			margin: 0;
-			flex-direction: column;
-			align-items: center;
-			line-height: 24px;
-		}
-		&__git {
-			width: 178px;
-			margin: 33px 0 0 0;
-			padding-right: 7px;
-		}
-		&__rs {
-			margin: 16px 5px 0 0;
-		}
-		&__social {
-			line-height: 27px;
-			margin: 30px 0 0 0;
-		}
-	}
+  .prices {
+    height: 585px;
+    padding-top: 37px;
+    &__choise{
+      margin: 0;
+    }
+    &__subheader {
+      font-size: 35px;
+      margin-left: 15px;
+    &_descr {
+      margin: 103px 0 0 0;
+      font-size: 25px;
+      line-height: 35px;
+    }
+    }
+    &__items {
+      margin-top: 53px;
+    }
+    &__leafs__min {
+      margin: 30px -10px 0 0 ;
+    }
+  }
+  .btn__prices {
+    margin-top: 28px;
+  }
+  .contact {
+    height: 739px;
+    padding-top: 40px;
+    position: relative;
+    &__wrapper {
+      flex-direction: column;
+      align-items:center;
+    }
+    &__text {
+      margin: 0;
+      padding: 0;
+    }
+    &__city {
+      &_name {
+        width: 450px;
+        margin-top: 68px;
+      }
+    }
+    &__img {
+      position: absolute;
+      width: 200px;
+      height: 248px;
+      bottom: 0;
+      margin: 0;
+    }
+  }
+  footer {
+    height: 200px;
+  }
+  .footer {
+    &__wrapper {
+      margin: 0;
+      flex-direction: column;
+      align-items: center;
+      line-height: 24px;
+    }
+    &__git {
+      width: 178px;
+      margin: 33px 0 0 0;
+      padding-right: 7px;
+    }
+    &__rs {
+      margin: 16px 5px 0 0;
+    }
+    &__social {
+      line-height: 27px;
+      margin: 30px 0 0 0;
+    }
+  }
 }
 @media (max-width: 767px) {
-	.welcome {
-		&__wrapper {
-			justify-content:flex-start;
-		}
-		&__leafs {
-			width: 30%;
-			height: 30%;
-		}
-	}
-	.about {
-		height: 700px;
-		&__descr {
-			max-width: 550px;
-			margin: 0;
-		}
-	}
-	.btn__service {
-		margin: 10px;
-		&_active{
-			margin: 10px;
-		}
-	}
-	.service {
-		height: 1700px;
-		&__subheader{
-			margin: 20px 10px;
-		}
-		&__items {
-			margin: 0 5px;
-		}
-	}
-	.prices {
-		height: 712px;
-		&__wrapper {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-		&__choise {
-			align-items: center;
-		}
-		&__descr {
-			align-items: center;
-		}
-		&__subheader{
-		&_descr {
-			text-align: center;
-			margin-top: 30px;
-		}
-		}
-		&__leafs__min {
-			width: 20%;
-			height: 20%;
-		}
-	}
-	.contact {
-		position: relative;
-		height: 739px;
-		&__img {
-			position: absolute;
-			bottom: 0;
-		}
-		&__city {
-			&_name{
-				width: 450px;
-			}
-		}
-	}
+  .welcome {
+    &__wrapper {
+      justify-content:flex-start;
+    }
+    &__leafs {
+      width: 30%;
+      height: 30%;
+    }
+  }
+  .about {
+    height: 700px;
+    &__descr {
+      max-width: 550px;
+      margin: 0;
+    }
+  }
+  .btn__service {
+    margin: 10px;
+    &_active{
+      margin: 10px;
+    }
+  }
+  .service {
+    height: 1700px;
+    &__subheader{
+      margin: 20px 10px;
+    }
+    &__items {
+      margin: 0 5px;
+    }
+  }
+  .prices {
+    height: 712px;
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__choise {
+      align-items: center;
+    }
+    &__descr {
+      align-items: center;
+    }
+    &__subheader{
+    &_descr {
+      text-align: center;
+      margin-top: 30px;
+    }
+    }
+    &__leafs__min {
+      width: 20%;
+      height: 20%;
+    }
+  }
+  .contact {
+    position: relative;
+    height: 739px;
+    &__img {
+      position: absolute;
+      bottom: 0;
+    }
+    &__city {
+      &_name{
+        width: 450px;
+      }
+    }
+  }
 }
 
 @media (max-width: 590px){  
-	header {
-		height: 96px;
-		padding: 26px 0 0 0;
-	}
-	.container {
-		max-width: 330px;
-	}
-	.hamburger {
-			width: 49px;
-			height: 14px;
-		transform: translateY(-6px);
-			span {
-				display: block; 
-				height: 2px;
-				width: 100%;
-				background-color: black; 
-				margin-bottom: 6px;
-				transition: 0.5s all;
-		}
-		&_active {
-		span {
-			margin-top: 8px;
-			margin-bottom: -9px;
-			&:nth-child(1) {
-				transform: translateY(3px) rotate(-45deg);
-			}
-			&:nth-child(2) {
-				display: none;
-			}  
-			&:nth-child(3) {
-				transform: translateY(3px) rotate(45deg);
-			}
-			&:nth-child(4) {
-				display: none;
-			} 
-		}
-	}
-	}
-	.header {
-		&__nav {
-		margin: 0;
-		}
-		&__logo {
-			width: 100%;
-			justify-content: flex-start;
-		&:nth-child(3) {
-			justify-content: flex-end;
-		}
-		}
-		&__menu {
-			position: fixed;
-			top: 0;
-			left: -100%;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
-			width: 70%;
-			height: 100vh;
-			padding: 10px 10px;
-			background-color: rgba(214, 231, 210, 0.9);
-			transition: 0.6s all;
-		&_active{
-			left: 0;
-			transition: 0.9s;
-		}
-		&_item { 
-			width: 100%;
-			margin: 0;
-			list-style-type: none;
-			text-align: center;
-			font-size: 24px;
-		&:nth-child(4) {
-			margin: 0;
-			a{
-				padding: 20px 60px;
-			}
-		}
-		&:nth-child(3) {
-			margin: 0;
-			a {
-				padding: 20px 60px;
-			}
-		}
-		&:nth-child(2) {
-			width: 100%;
-			margin: 0;
-			a {
-				padding: 20px 60px;
-			}
-		}
-		&:first-child {
-			margin: 0;
-			a {
-				padding: 20px 60px;
-			}
-		}
-		}
-	}
-	}
-	.welcome {
-		height: 300px;
-		&__header {
-			margin-top: 25px;
-			font-size: 25px;
-			line-height: 35px;
-		}
-		&__descr {
-			margin: 22px 0 0 0;
-		}
-		&__leafs {
-			display: none;
-		}
-	}
-	.about {
-		height: 516px;
-		padding-top: 30px;
-		&__info {
-			margin: 0;
-		}
-		&__subheader{
-			width: 290px;
-			height: 58px;
-			font-size: 25px;
-			line-height: 33px;
-		}
-		&__descr {
-			margin-top: 21px;
-			font-size: 15px;
-			line-height: 25px;
-		}
-		&__houseplant {
-			width: 150px;
-			height: 152px;
-			margin-top: 20px;
-		}
-	}
-	.service {
-		height: 3150px;
-		&__subheader {
-		width: 187px;
-		font-size: 25px;
-		line-height: 33px;
-		margin: 30px 70px 27px 0;
-		}
-		&__items {
-		justify-content: center;
-		align-items:center;
-		}
-		}
-	
-	.prices {
-		min-height: 512px;
-		padding: 15px;
-		&__subheader {
-		font-size: 25px;
-			&_descr {
-				font-size: 20px;
-				line-height: 35px;
-				margin-top: 20px;
-			}
-		}
-		&__items {
-			width: 224px;
-			min-height: 235px;
-			margin-top: 20px;
-			padding: 16px 0 29px 0;
-			&_btn {
-				max-width: 180px;
-				min-height: 50px;
-				margin-top: 13px;
-				padding: 14px 25px 0 31px;
-				font-size: 15px;
-			}
-			&_active {
-				width: 180px;
-				min-height: 185px;
-				margin-top: 13px;
-				padding: 14px 25px 0 31px;
-				font-size: 15px;
-			}
-		}
-		&__leafs__min{
-		display: none;
-		}
-	}
-	.btn {
-		&__prices{
-			width: 121px;
-			height: 35px;
-			font-size: 15px;
-		}
-		&__main {
-			width: 100px;
-			height: 34px;
-			margin-top: 25px;
-			font-size: 10px;
-		}
-		&__service {
-			width: 121px;
-			height: 35px;
-			margin: 10px 10px 0 0;
-			font-size: 15px;
-			&_active {
-				width: 121px;
-				height: 35px;
-				margin: 10px 10px 0 0;
-				font-size: 15px;
-			}
-		}
-	}
-	.contact {
-		height: 445px;
-		padding-top: 16px;
-		&__text {
-			font-size: 25px;
-		}
-		&__city {
-			&_wrapper{
-				width: 350px;
-				align-items: center;
-			}
-			&_name {
-				width: 300px;
-				margin-top: 50px;
-			}
-			&_menu {
-				width: 300px;
-			}
-			&_board {
-				width: 282px;
-				height: 212px;
-				padding: 36px 0 0 20px;
-				&_name {
-					margin: 0;
-					padding-right: 10px;
-					:nth-child(3) {
-						line-height: 16px;
-					}
-				}
-				&_adress {
-					margin: 0;
-					padding: 0;
-					:nth-child(3) {
-						line-height: 16px;
-					}
-				}
-			}
-		}
-		&__img {
-			width: 100px;
-			height: 124px;
-			margin-top: 123px;
-		}
-	}
-	footer {
-		height: 145px;
-	}
-	.footer{
-		&__git {
-		margin-top: 21px;
-		}
-		&__social {
-			margin-top: 15px;
-		li {
-			&:nth-child(2){
-			padding-left: 4px;
-			}
-			&:nth-child(3){
-			padding-left: 4px;
-			}
-		}
-		}
-	}
+  header {
+    height: 96px;
+    padding: 26px 0 0 0;
+  }
+  .container {
+    max-width: 330px;
+  }
+  .hamburger {
+      width: 49px;
+      height: 14px;
+    transform: translateY(-6px);
+      span {
+        display: block; 
+        height: 2px;
+        width: 100%;
+        background-color: black; 
+        margin-bottom: 6px;
+        transition: 0.5s all;
+    }
+    &_active {
+    span {
+      margin-top: 8px;
+      margin-bottom: -9px;
+      &:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }  
+      &:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+      }
+      &:nth-child(4) {
+        display: none;
+      } 
+    }
+  }
+  }
+  .header {
+    &__nav {
+    margin: 0;
+    }
+    &__logo {
+      width: 100%;
+      justify-content: flex-start;
+    &:nth-child(3) {
+      justify-content: flex-end;
+    }
+    }
+    &__menu {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
+      height: 100vh;
+      padding: 10px 10px;
+      background-color: rgba(214, 231, 210, 0.9);
+      transition: 0.6s all;
+    &_active{
+      justify-content: flex-start;
+      left: 0;
+      transition: 0.9s;
+    }
+    &_item { 
+      width: 100%;
+      height: 80px;
+      margin: 0;
+      list-style-type: none;
+      text-align: center;
+      font-size: 24px;
+    &:nth-child(4) {
+      margin: 0;
+      a{
+        padding: 20px 60px;
+      }
+    }
+    &:nth-child(3) {
+      margin: 0;
+      a {
+        padding: 20px 60px;
+      }
+    }
+    &:nth-child(2) {
+      width: 100%;
+      margin: 0;
+      a {
+        padding: 20px 60px;
+      }
+    }
+    &:first-child {
+      margin: 0;
+      a {
+        padding: 20px 60px;
+      }
+    }
+    }
+  }
+  }
+  .welcome {
+    height: 300px;
+    &__header {
+      margin-top: 25px;
+      font-size: 25px;
+      line-height: 35px;
+    }
+    &__descr {
+      margin: 22px 0 0 0;
+    }
+    &__leafs {
+      display: none;
+    }
+  }
+  .about {
+    height: 516px;
+    padding-top: 30px;
+    &__info {
+      margin: 0;
+    }
+    &__subheader{
+      width: 290px;
+      height: 58px;
+      font-size: 25px;
+      line-height: 33px;
+    }
+    &__descr {
+      margin-top: 21px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__houseplant {
+      width: 150px;
+      height: 152px;
+      margin-top: 20px;
+    }
+  }
+  .service {
+    height: 3150px;
+    &__subheader {
+    width: 187px;
+    font-size: 25px;
+    line-height: 33px;
+    margin: 30px 70px 27px 0;
+    }
+    &__items {
+    justify-content: center;
+    align-items:center;
+    }
+    }
+  
+  .prices {
+    min-height: 512px;
+    padding: 15px;
+    &__subheader {
+    font-size: 25px;
+      &_descr {
+        font-size: 20px;
+        line-height: 35px;
+        margin-top: 20px;
+      }
+    }
+    &__items {
+      width: 224px;
+      min-height: 235px;
+      margin-top: 20px;
+      padding: 16px 0 29px 0;
+      &_btn {
+        max-width: 180px;
+        min-height: 50px;
+        margin-top: 13px;
+        padding: 16px 25px 0 31px;
+        font-size: 15px;
+      }
+      &_active {
+        width: 180px;
+        min-height: 185px;
+        margin-top: 13px;
+        padding: 14px 25px 0 31px;
+        font-size: 15px;
+      }
+    }
+    &__leafs__min{
+    display: none;
+    }
+  }
+  .btn {
+    &__prices{
+      width: 121px;
+      height: 35px;
+      font-size: 15px;
+    }
+    &__main {
+      width: 100px;
+      height: 34px;
+      margin-top: 25px;
+      font-size: 10px;
+    }
+    &__service {
+      width: 121px;
+      height: 35px;
+      margin: 10px 10px 0 0;
+      font-size: 15px;
+      &_active {
+        width: 121px;
+        height: 35px;
+        margin: 10px 10px 0 0;
+        font-size: 15px;
+      }
+    }
+  }
+  .contact {
+    height: 445px;
+    padding-top: 16px;
+    &__text {
+      font-size: 25px;
+    }
+    &__city {
+      &_wrapper{
+        width: 350px;
+        align-items: center;
+      }
+      &_name {
+        width: 300px;
+        margin-top: 50px;
+      }
+      &_menu {
+        width: 300px;
+        z-index: 1;
+      }
+      &_board {
+        width: 282px;
+        height: 212px;
+        padding: 36px 0 0 20px;
+        &_name {
+          margin: 0;
+          padding-right: 10px;
+          :nth-child(3) {
+            line-height: 16px;
+          }
+        }
+        &_adress {
+          margin: 0;
+          padding: 0;
+          :nth-child(3) {
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    &__img {
+      width: 100px;
+      height: 124px;
+      margin-top: 123px;
+    }
+  }
+  footer {
+    height: 145px;
+  }
+  .footer{
+    &__git {
+    margin-top: 21px;
+    }
+    &__social {
+      margin-top: 15px;
+    li {
+      &:nth-child(2){
+      padding-left: 4px;
+      }
+      &:nth-child(3){
+      padding-left: 4px;
+      }
+    }
+    }
+  }
 }

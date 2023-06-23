@@ -1,63 +1,63 @@
 .service {
-	height: 1300px;
-	background-color: $bg_section-color;
-	&__projects{
-		display: flex;
-		justify-content: flex-start;
-	}
-	&__subheader {
-		width: 306px;
-		margin: 37px 142px 0 10px;
-		font-family: 'Inika';
-		font-weight: 400;
-		font-size: 40px;
-		line-height: 52px;
-		color: $green-color;
-	}
-	&__items {
-		margin-top: 25px;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		padding: 0 10px 0 0;
-	}
-	&__item {
-		width: 330px;
-		height: 450px;
-		margin-top: 55px;
-		padding: 0 0 36px 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		transition: 0.3s;
-		font-family: 'Inter';
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 17px;
-		text-align: center;
-		color: #717171;
-		border: solid 1px #E3E1D5;
-		border-radius: 20px 20px 20px 20px;
-		cursor: pointer;
-		span {
-		font-family: 'Inter';
-		font-weight: 700;
-		font-size: 20px;
-		text-align: center;
-		color: $orange-color;
-		}
-	}
-	&__desktop {
-		margin-bottom: 13px;
-	}
-	&__mobile {
-		width: 280px;
-		height: 530px;
-		display: none;
-	}
+  height: 1300px;
+  background-color: $bg_section-color;
+  &__projects{
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__subheader {
+    width: 306px;
+    margin: 37px 142px 0 10px;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: $green-color;
+  }
+  &__items {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px 0 0;
+  }
+  &__item {
+    width: 330px;
+    height: 450px;
+    margin-top: 55px;
+    padding: 0 0 36px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.3s;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    color: #717171;
+    border: solid 1px #E3E1D5;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+    span {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: $orange-color;
+    }
+  }
+  &__desktop {
+    margin-bottom: 13px;
+  }
+  &__mobile {
+    width: 280px;
+    height: 530px;
+    display: none;
+  }
 }
 
 .blur {
-	filter: blur(4px);
+  filter: blur(4px);
 }
 

@@ -1,63 +1,63 @@
 header {
-	height: 134px;
-	background-color: $bg_section-color;
-  	padding-top: 42px;
+  height: 134px;
+  background-color: $bg_section-color;
+    padding-top: 42px;
 }
 
 .header {
-	&__nav {
-		height: 50px;
-		padding: 2px 12px 0 10px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	&__logo {
-		display: flex;
-		font-family: 'Inika';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 19px;
-		color: #000000;
-		&__img{
-		transform: translate(-1px,-6px);
-		}
-	}
-	&__menu {
-		height: 50px;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		&_item {
-		margin-left: 48px;
-		list-style-type: none;
-			&:nth-child(4) {
-				margin-left: 46px;
-			}
-			&:nth-child(3) {
-				margin-left: 39px;
-			}
-			&:nth-child(2) {
-				width: 76px;
-				margin-left: 0;
-			}
-			&:first-child {
-			margin: 0 49px 0 0;
-			}
-			a {
-			text-decoration: none;
-				font-family: 'Inika';
-				font-style: normal;
-				font-weight: 400;
-				font-size: 16px;
-				color: #010201;
-			&:hover {
-				transition: 0.3s;
-				font-weight: 700;
-				color: $orange-color;
-			}
-			}
-		}     
-	}
+  &__nav {
+    height: 50px;
+    padding: 2px 12px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    &__img{
+    transform: translate(-1px,-6px);
+    }
+  }
+  &__menu {
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &_item {
+    margin-left: 48px;
+    list-style-type: none;
+      &:nth-child(4) {
+        margin-left: 46px;
+      }
+      &:nth-child(3) {
+        margin-left: 39px;
+      }
+      &:nth-child(2) {
+        width: 76px;
+        margin-left: 0;
+      }
+      &:first-child {
+      margin: 0 49px 0 0;
+      }
+      a {
+      text-decoration: none;
+        font-family: 'Inika';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #010201;
+      &:hover {
+        transition: 0.3s;
+        font-weight: 700;
+        color: $orange-color;
+      }
+      }
+    }     
+  }
 }
