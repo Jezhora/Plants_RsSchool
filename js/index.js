@@ -40,16 +40,14 @@ window.addEventListener('DOMContentLoaded', () => {
   serviceButtons.addEventListener('click', ({target}) => {
 
     if(target.classList.contains('btn__service') && countActiveButtons < 2) {
-      target.classList.add('btn__service_active');
-      target.classList.remove('btn__service');
+      target.classList.toggle('btn__service_active');
       serviceItems.forEach(item => {
         item.classList.add('blur');
       });
       removeBlur();
       countActiveButtons ++;
     } else if (target.classList.contains('btn__service_active')) {
-      target.classList.add('btn__service');
-      target.classList.remove('btn__service_active');
+      target.classList.toggle('btn__service_active');
       serviceItems.forEach(item => {
         item.classList.add('blur');
       });
@@ -62,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     }
       
-    function removeBlur(service) {	
+    function removeBlur() {	
 
       serviceGardens.classList.forEach(item => {
         if(item === 'btn__service_active'){		
